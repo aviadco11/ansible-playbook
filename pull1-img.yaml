@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Pull an image
+    containers.podman.podman_image:
+      name: quay.io/bitnami/wildfly

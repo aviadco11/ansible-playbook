@@ -1,0 +1,130 @@
+2021-11-04 11:48:50,586 p=1272235 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-11-04 11:48:50,721 p=1272235 u=root n=ansible | PLAY [localhost] ***************************************************************************************************************************************************************
+2021-11-04 11:48:50,735 p=1272235 u=root n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2021-11-04 11:48:52,759 p=1272235 u=root n=ansible | ok: [localhost]
+2021-11-04 11:48:52,792 p=1272235 u=root n=ansible | TASK [who am i] ****************************************************************************************************************************************************************
+2021-11-04 11:48:53,328 p=1272235 u=root n=ansible | changed: [localhost]
+2021-11-04 11:48:53,341 p=1272235 u=root n=ansible | TASK [print] *******************************************************************************************************************************************************************
+2021-11-04 11:48:53,388 p=1272235 u=root n=ansible | ok: [localhost] => {
+    "msg": {
+        "changed": true,
+        "cmd": "whoami",
+        "delta": "0:00:00.009546",
+        "end": "2021-11-04 11:48:53.295324",
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "start": "2021-11-04 11:48:53.285778",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "root",
+        "stdout_lines": [
+            "root"
+        ]
+    }
+}
+2021-11-04 11:48:53,404 p=1272235 u=root n=ansible | TASK [pull an image] ***********************************************************************************************************************************************************
+2021-11-04 11:48:54,212 p=1272235 u=root n=ansible | ok: [localhost]
+2021-11-04 11:48:54,224 p=1272235 u=root n=ansible | TASK [tag image] ***************************************************************************************************************************************************************
+2021-11-04 11:48:54,799 p=1272235 u=root n=ansible | ok: [localhost]
+2021-11-04 11:48:54,833 p=1272235 u=root n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2021-11-04 11:48:54,834 p=1272235 u=root n=ansible | localhost                  : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-11-04 11:53:26,162 p=1290931 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-11-04 11:53:26,163 p=1290931 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: registry
+
+2021-11-04 11:53:26,239 p=1290931 u=root n=ansible | ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleMapping'> instead
+
+The error appears to be in '/root/play/pull-images.yaml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+#- hosts: localhost
+  vars_files:
+  ^ here
+
+2021-11-04 11:55:07,323 p=1297791 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-11-04 11:55:07,324 p=1297791 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: registry
+
+2021-11-04 11:55:07,397 p=1297791 u=root n=ansible | ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleMapping'> instead
+
+The error appears to be in '/root/play/pull-images.yaml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+# - hosts: localhost
+  vars_files:
+  ^ here
+
+2021-11-04 11:55:27,263 p=1299214 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-11-04 11:55:27,263 p=1299214 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: registry
+
+2021-11-04 11:55:27,383 p=1299214 u=root n=ansible | ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleMapping'> instead
+
+The error appears to be in '/root/play/pull-images.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+  vars_files:
+  ^ here
+
+2021-11-04 11:56:47,196 p=1304614 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-11-04 11:56:47,196 p=1304614 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: registry
+
+2021-11-04 11:56:47,343 p=1304614 u=root n=ansible | PLAY [localhost] ***************************************************************************************************************************************************************
+2021-11-04 11:56:47,343 p=1304614 u=root n=ansible | skipping: no hosts matched
+2021-11-04 11:56:47,344 p=1304614 u=root n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2021-11-04 11:57:08,138 p=1306110 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-11-04 11:57:08,139 p=1306110 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: registry
+
+2021-11-04 11:57:08,283 p=1306110 u=root n=ansible | PLAY [localhost] ***************************************************************************************************************************************************************
+2021-11-04 11:57:08,283 p=1306110 u=root n=ansible | skipping: no hosts matched
+2021-11-04 11:57:08,283 p=1306110 u=root n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2021-11-04 11:57:43,665 p=1308577 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-11-04 11:57:43,666 p=1308577 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: registry
+
+2021-11-04 11:57:43,826 p=1308577 u=root n=ansible | PLAY [localhost] ***************************************************************************************************************************************************************
+2021-11-04 11:57:43,827 p=1308577 u=root n=ansible | skipping: no hosts matched
+2021-11-04 11:57:43,827 p=1308577 u=root n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2021-11-04 11:58:16,676 p=1310818 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-11-04 11:58:16,807 p=1310818 u=root n=ansible | PLAY [localhost] ***************************************************************************************************************************************************************
+2021-11-04 11:58:16,820 p=1310818 u=root n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2021-11-04 11:58:18,823 p=1310818 u=root n=ansible | ok: [localhost]
+2021-11-04 11:58:18,862 p=1310818 u=root n=ansible | TASK [who am i] ****************************************************************************************************************************************************************
+2021-11-04 11:58:19,465 p=1310818 u=root n=ansible | changed: [localhost]
+2021-11-04 11:58:19,497 p=1310818 u=root n=ansible | TASK [print] *******************************************************************************************************************************************************************
+2021-11-04 11:58:19,563 p=1310818 u=root n=ansible | ok: [localhost] => {
+    "msg": {
+        "changed": true,
+        "cmd": "whoami",
+        "delta": "0:00:00.006756",
+        "end": "2021-11-04 11:58:19.429919",
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "start": "2021-11-04 11:58:19.423163",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "root",
+        "stdout_lines": [
+            "root"
+        ]
+    }
+}
+2021-11-04 11:58:19,583 p=1310818 u=root n=ansible | TASK [pull an image] ***********************************************************************************************************************************************************
+2021-11-04 11:58:20,484 p=1310818 u=root n=ansible | ok: [localhost]
+2021-11-04 11:58:20,504 p=1310818 u=root n=ansible | TASK [tag image] ***************************************************************************************************************************************************************
+2021-11-04 11:58:21,166 p=1310818 u=root n=ansible | ok: [localhost]
+2021-11-04 11:58:21,204 p=1310818 u=root n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2021-11-04 11:58:21,204 p=1310818 u=root n=ansible | localhost                  : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

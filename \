@@ -1,0 +1,23 @@
+---
+  vars_files: 
+    - ./vars/registry.yml
+  
+  tasks:
+  - name: who am i
+    shell: whoami       
+    register: output
+
+  - name: print          
+    debug:
+      msg: "{{output}}"
+
+  - name: pull an image
+    docker_image:
+      name: "{{ src_reg }}/pacur/centos-7"
+      source: pull
+
+  - name: tag image
+    docker_image:
+      name: pacur/centos-7:latest
+      tag: v1
+      source: local
